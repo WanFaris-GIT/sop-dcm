@@ -112,7 +112,7 @@ className="text-sm text-gray-400 hover:text-purple-300 transition-colors duratio
               Terma Penggunaan
             </Link>
             <span className="text-gray-700">|</span>
-            <span className="text-gray-600">v2025.1 — Kemaskini: Jun 2025</span>
+            <span className="text-gray-600">WanFaris — Kemaskini: Jun 2026</span>
           </div>
         </div>
       </div>
