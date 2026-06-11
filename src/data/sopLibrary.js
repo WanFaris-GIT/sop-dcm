@@ -355,8 +355,8 @@ export const sopLibrary = [
       'Muat Turun ( Download ) Pangkalan Data melalui platform Cakna Ummah :-',
       'Log masuk (login) Dashboard Cakna Ummah utama melalui pautan (Link)',
       'URL: https://console.caknaummah.com/login',
-      'Username: sales@hitdigital.my',
-      'Password: sales@hitdigital.my',
+      'Username: ****@hitdigital.my',
+      'Password: ****@hitdigital.my',
       'Muat Turun (Download) Pangkalan Data melalui platform Cakna Ummah'
     ],
     workflow: {
@@ -371,7 +371,7 @@ export const sopLibrary = [
     titleMalay: 'Setup Sistem Blasting & Monitoring (Laptop)',
     jobList: 'Setup sistem blasting & monitoring di laptop',
     workList: [
-      'Setup sistem blasting & monitoring di lapto'
+      'Setup sistem blasting & monitoring di laptop'
     ],
     workflow: {
       image: '/images/TEAM2.png'

@@ -28,10 +28,10 @@ export default function SOPLibrary() {
   };
 
   return (
-      <div className="min-h-screen bg-linear-to-b from-slate-100 via-white to-indigo-100 p-4 sm:p-6 lg:p-8">
+      <div className="min-h-screen bg-gradient-to-b from-purple-50 via-white to-white p-4 sm:p-6 lg:p-8">
       <div className="mx-auto max-w-6xl">
         <div className="mb-6 sm:mb-8 space-y-3">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-indigo-500">SOP Portal</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-purple-600">SOP Portal</p>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">Pilih kumpulan SOP</h1>
           <p className="max-w-2xl text-gray-600 text-sm sm:text-base">Pilih sama ada anda ingin melihat SOP untuk pengurusan HOD atau operasi Team. Paparan ini direka dengan susun atur kad yang lebih jelas dan mudah dibaca.</p>
         </div>
@@ -89,7 +89,7 @@ export default function SOPLibrary() {
           <div>
             <div className="mb-4 flex items-center justify-between gap-3">
               <div>
-                <p className="text-xs uppercase tracking-[0.25em] text-indigo-500">Senarai SOP</p>
+                  <p className="text-xs uppercase tracking-[0.25em] text-purple-600">Senarai SOP</p>
                 <h3 className="text-xl font-bold text-slate-900">{activeGroup === 'hod' ? 'HOD' : 'TEAM'}</h3>
               </div>
               <span className="rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700">{groupedSOPs.length} item</span>
@@ -130,10 +130,10 @@ export default function SOPLibrary() {
                         className={`w-full rounded-2xl py-2.5 text-sm font-semibold transition-colors ${
                           isSelected
                             ? 'bg-white text-indigo-700 hover:bg-indigo-50'
-                            : 'bg-indigo-600 text-white hover:bg-indigo-700'
+                            : 'bg-purple-700 text-white hover:bg-indigo-700'
                         }`}
                       >
-                        {isSelected ? 'Details Dipaparkan' : 'Lihat Details'}
+                        {isSelected ? 'Details Dipaparkan' : 'Details'}
                       </button>
                     </div>
                   </div>
@@ -155,7 +155,7 @@ export default function SOPLibrary() {
                 className="relative w-full max-w-4xl overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl max-h-[92vh]"
               >
 
-                <div className="flex items-center justify-between gap-4 border-b border-slate-200 bg-slate-50 p-5">
+                <div className="flex items-center justify-between gap-4 border-b border-purple-100 bg-purple-50/60 p-5">
                   <div>
                     <p className="text-xs uppercase tracking-[0.25em] text-indigo-500">
                       {activeGroup === 'hod' ? 'HOD Focus' : 'Team Operations'}
@@ -167,9 +167,9 @@ export default function SOPLibrary() {
                   <button
                     type="button"
                     onClick={closeDetails}
-                    className="rounded-full border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                    className="rounded-full border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-red-500"
                   >
-                    ✕ Tutup
+                    ✕
                   </button>
                 </div>
 
@@ -190,15 +190,15 @@ export default function SOPLibrary() {
                   </div>
 
                   <div className="space-y-6">
-                    <section className="rounded-2xl border border-emerald-100 bg-emerald-50/80 p-4">
+                    <section className="rounded-2xl border border-purple-100 bg-purple-50/70 p-4">
                       <button
                         type="button"
                         onClick={() => toggleSection('workList')}
                         className="flex w-full items-center justify-between text-left"
                       >
-                        <h3 className="text-xl font-bold text-emerald-800">Work List</h3>
+                        <h3 className="text-xl font-bold text-purple-800">Work List</h3>
                         <span
-                          className={`text-emerald-700 transition-transform ${expandedSections.workList ? 'rotate-180' : ''}`}
+                          className={`text-purple-700 transition-transform ${expandedSections.workList ? 'rotate-180' : ''}`}
                         >
                           ▼
                         </span>
@@ -276,13 +276,10 @@ export default function SOPLibrary() {
                                 alt={`Chart SOP for ${displaySOP.title}`}
                                 className="w-full rounded-2xl border border-slate-200 bg-slate-50 object-contain max-h-[60vh]"
                               />
-                              <p className="text-xs text-slate-500">(Draft placeholder — replace with real SOP image later)</p>
                             </div>
                           ) : (
                             <div className="flex min-h-55 flex-col items-center justify-center rounded-2xl bg-sky-50 text-center">
                               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-500">Chart SOP Image</p>
-                              <p className="mt-2 text-base text-slate-600">Masukkan 1 gambar chart SOP sebenar untuk SOP ini.</p>
-                              <p className="mt-1 text-sm text-slate-400">(Tempat ini akan guna untuk image per SOP)</p>
                             </div>
                           )}
                         </div>
