@@ -9,8 +9,8 @@ export const sopLibrary = [
       "Muat Turun ( Download ) Pangkalan Data melalui platform Cakna Ummah :-",
       "Log masuk (login) Dashboard Cakna Ummah utama melalui pautan (Link)",
       "URL: https://console.caknaummah.com/login",
-      "Username: sales@hitdigital.my",
-      "Password: sales@hitdigital.my",
+      "Username: ****@hitdigital.my",
+      "Password: ****@hitdigital.my",
       "Muat Turun (Download) Pangkalan Data melalui platform Cakna Ummah"
     ],
     workflow: {

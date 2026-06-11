@@ -4,28 +4,25 @@ const teamMembers = [
   {
     role: "HOD",
     name: "En Afiq Azhar",
-    image: "/images/TEAM1.png",
     accent: "bg-indigo-50 border-indigo-100",
   },
   {
     role: "Staff",
     name: "En Fadhil",
-    image: "/images/TEAM2.png",
     accent: "bg-emerald-50 border-emerald-100",
   },
   {
     role: "Part-time",
     name: "En Izzudin",
-    image: "/images/TEAM3.png",
     accent: "bg-cyan-50 border-cyan-100",
   },
   {
     role: "Freelance",
     name: "En Fakhrul",
-    image: "/images/TEAM4.png",
     accent: "bg-purple-50 border-purple-100",
   },
 ];
+
 
 export default function Team() {
   return (
@@ -76,13 +73,16 @@ export default function Team() {
 
 
               <div className="px-4 pb-4">
-                <img
-                  src={m.image}
-                  alt={`${m.role} - ${m.name}`}
-                  className="w-full h-40 object-cover rounded-xl border border-gray-200 bg-gray-50"
-                />
+                <div
+                  className="w-full h-40 rounded-xl border border-gray-200 bg-gray-50 flex items-center justify-center"
+                  aria-label={`${m.role} - ${m.name}`}
+                  role="img"
+                >
+                  <span className="text-6xl">👤</span>
+                </div>
 
                 <div className="mt-4">
+
                   {/* role setiap team di bawah accent */}
                   <p className="text-xs font-bold uppercase tracking-wider text-purple-700">
                     {m.role}
